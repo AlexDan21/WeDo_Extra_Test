@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp1.Loading"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Loading" Height="450" Width="800"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Background="{x:Null}" ContentRendered="Window_ContentRendered">
+
+    <materialDesign:Card UniformCornerRadius="15" Background="{DynamicResource MaterialDesignPaper}"
+    Margin="25">
+
+        <Grid>
+
+            <Image Source="/Images/csc.png" HorizontalAlignment="Center" Margin="0 0 0 100" Height="200" Width="200" Visibility="Visible"/>
+
+            <ProgressBar Name="progressBar" Value="0" Width="500" Height="10" Margin="0 250 0 0" IsIndeterminate="True" Background="White" Foreground="#FF0AB4A9"></ProgressBar>
+        
+    </Grid>
+    </materialDesign:Card>
+</Window>
